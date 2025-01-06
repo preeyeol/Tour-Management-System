@@ -1,40 +1,26 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <div>
-      <Link
-        to="/"
-        className="p-3 mt-4 text-white rounded bg-lime-600 hover:text-lime-700 hover:font-bold"
-      >
-        Home
-      </Link>
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/contact", label: "Contact" },
+    { path: "/services", label: "Services" },
+    { path: "/login", label: "Login" },
+    { path: "/signup", label: "Signup" },
+  ];
 
-      <Link
-        to="/contact"
-        className="p-3 mt-4 text-white rounded bg-lime-600 hover:text-lime-700 hover:font-bold"
-      >
-        Contact
-      </Link>
-      <Link
-        to="/services"
-        className="p-3 mt-4 text-white rounded bg-lime-600 hover:text-lime-700 hover:font-bold"
-      >
-        Services
-      </Link>
-      <Link
-        to="/login"
-        className="p-3 mt-4 text-white rounded bg-lime-600 hover:text-lime-700 hover:font-bold"
-      >
-        Login
-      </Link>
-      <Link
-        to="/signup"
-        className="p-3 mt-4 text-white rounded bg-lime-600 hover:text-lime-700 hover:font-bold"
-      >
-        Signup
-      </Link>
-    </div>
+  return (
+    <nav className="flex gap-4">
+      {navLinks.map((link, index) => (
+        <Link
+          key={index}
+          to={link.path}
+          className="no-underline hover:underline"
+        >
+          {link.label}
+        </Link>
+      ))}
+    </nav>
   );
 };
 
