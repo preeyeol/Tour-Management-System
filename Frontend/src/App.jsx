@@ -6,7 +6,7 @@ import Hero from "./pages/Hero";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
+      <div>
         <Hero />
       </div>
     </BrowserRouter>
