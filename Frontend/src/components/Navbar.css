@@ -44,11 +44,11 @@
 }
 
 .navbar-links ul li a:hover {
-  color: #047857;
+  color: #f7a501;
 }
 
 .navbar-links ul li a.active {
-  color: #047857;
+  color: #f7a501;
   font-weight: bold;
 }
 

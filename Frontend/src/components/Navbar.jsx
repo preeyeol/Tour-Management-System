@@ -6,7 +6,6 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Desktop Navigation */}
         <div className="navbar-links">
           <ul>
             <li>
