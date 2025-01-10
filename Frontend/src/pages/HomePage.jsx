@@ -1,9 +1,10 @@
 const HomePage = () => {
   return (
-    <div className="w-15">
-      <img src="/image/bbay.jpg" />
-      <img src="/image/bbay.jpg" />
-      <img src="/image/bbay.jpg" />
+    <div className="relative h-[718px]">
+      <img
+        className="absolute w-full h-[718px] object-cover"
+        src="/image/travel.jpg"
+      />
     </div>
   );
 };
